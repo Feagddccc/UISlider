@@ -15,7 +15,10 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupSliderRed()
+        setupSliderGreen()
+        setupSliderBlue()
+        
     }
     
     // MARK: - IBAction
@@ -28,6 +31,27 @@ final class ViewController: UIViewController {
     @IBAction func sliderActionBlue() {
         
     }
+    
+    // MARK: - private method
+    private func setupSliderRed() {
+        sliderRed.value = 1
+        sliderRed.minimumValue = 1
+        sliderRed.maximumValue = 50
+        sliderRed.thumbTintColor = .red
+    }
+    private func setupSliderGreen() {
+        sliderGreen.value = 1
+        sliderGreen.minimumValue = 1
+        sliderGreen.maximumValue = 50
+        sliderGreen.thumbTintColor = .green
+    }
+    private func setupSliderBlue() {
+        sliderBlue.value = 1
+        sliderBlue.minimumValue = 1
+        sliderBlue.maximumValue = 50
+        sliderBlue.thumbTintColor = .blue
+    }
+    
 
 }
 
