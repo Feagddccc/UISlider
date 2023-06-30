@@ -7,8 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
  // MARK: - IBOutlet
+    @IBOutlet var sliderRed: UISlider!
+    @IBOutlet var sliderGreen: UISlider!
+    @IBOutlet var sliderBlue: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +19,15 @@ class ViewController: UIViewController {
     }
     
     // MARK: - IBAction
-
+    @IBAction func sliderActionRed() {
+        
+    }
+    @IBAction func sliderActionGreen() {
+        
+    }
+    @IBAction func sliderActionBlue() {
+        
+    }
 
 }
 
