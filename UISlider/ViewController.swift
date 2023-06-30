@@ -38,18 +38,24 @@ final class ViewController: UIViewController {
         sliderRed.minimumValue = 1
         sliderRed.maximumValue = 50
         sliderRed.thumbTintColor = .red
+        sliderRed.minimumTrackTintColor = .red
+        sliderRed.maximumTrackTintColor = .gray
     }
     private func setupSliderGreen() {
         sliderGreen.value = 1
         sliderGreen.minimumValue = 1
         sliderGreen.maximumValue = 50
         sliderGreen.thumbTintColor = .green
+        sliderGreen.minimumTrackTintColor = .green
+        sliderGreen.maximumTrackTintColor = .gray
     }
     private func setupSliderBlue() {
         sliderBlue.value = 1
         sliderBlue.minimumValue = 1
         sliderBlue.maximumValue = 50
         sliderBlue.thumbTintColor = .blue
+        sliderBlue.minimumTrackTintColor = .blue
+        sliderBlue.maximumTrackTintColor = .gray
     }
     
 
