@@ -12,12 +12,18 @@ final class ViewController: UIViewController {
     @IBOutlet var sliderRed: UISlider!
     @IBOutlet var sliderGreen: UISlider!
     @IBOutlet var sliderBlue: UISlider!
+    @IBOutlet var redLabel: UILabel!
+    @IBOutlet var greenLabel: UILabel!
+    @IBOutlet var blueLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSliderRed()
         setupSliderGreen()
         setupSliderBlue()
+        setupRedLabel()
+        setupGreenLabel()
+        setupBlueLabel()
         
     }
     
@@ -33,6 +39,29 @@ final class ViewController: UIViewController {
     }
     
     // MARK: - private method
+    private func setupRedLabel() {
+        redLabel.text = "RED"
+        redLabel.font = UIFont.systemFont(ofSize: 20)
+        redLabel.textAlignment = .center
+        redLabel.numberOfLines = 1
+        redLabel.shadowColor = .red
+        
+    }
+    private func setupGreenLabel() {
+        greenLabel.text = "GREEN"
+        greenLabel.font = UIFont.systemFont(ofSize: 20)
+        greenLabel.textAlignment = .center
+        greenLabel.numberOfLines = 1
+        greenLabel.shadowColor = .green
+    }
+    private func setupBlueLabel() {
+        blueLabel.text = "BLUE"
+        blueLabel.font = UIFont.systemFont(ofSize: 20)
+        blueLabel.textAlignment = .center
+        blueLabel.numberOfLines = 1
+        blueLabel.shadowColor = .blue
+    }
+    
     private func setupSliderRed() {
         sliderRed.value = 1
         sliderRed.minimumValue = 1

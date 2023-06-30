@@ -17,32 +17,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="AqF-Fs-eXr">
-                                <rect key="frame" x="16" y="87.000000000000014" width="358" height="230.33333333333337"/>
+                                <rect key="frame" x="16" y="87" width="358" height="351"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heB-Jq-SJp">
-                                        <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RE4-6U-Ciz">
-                                        <rect key="frame" x="-2" y="60.333333333333343" width="362" height="31"/>
+                                        <rect key="frame" x="-2" y="0.0" width="362" height="31"/>
                                         <connections>
                                             <action selector="sliderActionRed" destination="BYZ-38-t0r" eventType="valueChanged" id="wdk-oo-UWe"/>
                                         </connections>
                                     </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heB-Jq-SJp">
+                                        <rect key="frame" x="0.0" y="70" width="358" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fvQ-JX-d00">
                                         <rect key="frame" x="-2" y="130.33333333333334" width="362" height="31"/>
                                         <connections>
                                             <action selector="sliderActionGreen" destination="BYZ-38-t0r" eventType="valueChanged" id="zTa-zm-5WO"/>
                                         </connections>
                                     </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUH-04-Lvf">
+                                        <rect key="frame" x="0.0" y="200.33333333333331" width="358" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hJy-iy-GpO">
-                                        <rect key="frame" x="-2" y="200.33333333333331" width="362" height="31"/>
+                                        <rect key="frame" x="-2" y="260.66666666666669" width="362" height="31"/>
                                         <connections>
                                             <action selector="sliderActionBlue" destination="BYZ-38-t0r" eventType="valueChanged" id="U6V-fy-ufg"/>
                                         </connections>
                                     </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMd-uZ-482">
+                                        <rect key="frame" x="0.0" y="330.66666666666669" width="358" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -55,6 +67,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueLabel" destination="wMd-uZ-482" id="fcS-gi-U4j"/>
+                        <outlet property="greenLabel" destination="EUH-04-Lvf" id="VEB-ya-mP7"/>
+                        <outlet property="redLabel" destination="heB-Jq-SJp" id="d6h-Zo-wX2"/>
                         <outlet property="sliderBlue" destination="hJy-iy-GpO" id="xWB-Gr-atc"/>
                         <outlet property="sliderGreen" destination="fvQ-JX-d00" id="4LH-zJ-aMC"/>
                         <outlet property="sliderRed" destination="RE4-6U-Ciz" id="kix-8H-vYy"/>
