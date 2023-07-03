@@ -21,10 +21,7 @@ final class ViewController: UIViewController {
         setupSliderRed()
         setupSliderGreen()
         setupSliderBlue()
-        setupRedLabel()
-        setupGreenLabel()
-        setupBlueLabel()
-        
+        setupLabel(_label: redLabel, text: "")
     }
     
     // MARK: - IBAction
@@ -39,27 +36,15 @@ final class ViewController: UIViewController {
     }
     
     // MARK: - private method
-    private func setupRedLabel() {
-        redLabel.text = "RED"
+    
+    private func setupLabel(_label: UILabel, text: String) {
+        redLabel.text = sliderRed.value.formatted()
         redLabel.font = UIFont.systemFont(ofSize: 20)
         redLabel.textAlignment = .center
-        redLabel.numberOfLines = 1
-        redLabel.shadowColor = .red
+        sliderRed.minimumValue = 1
+        sliderRed.maximumValue = 50
+       
         
-    }
-    private func setupGreenLabel() {
-        greenLabel.text = "GREEN"
-        greenLabel.font = UIFont.systemFont(ofSize: 20)
-        greenLabel.textAlignment = .center
-        greenLabel.numberOfLines = 1
-        greenLabel.shadowColor = .green
-    }
-    private func setupBlueLabel() {
-        blueLabel.text = "BLUE"
-        blueLabel.font = UIFont.systemFont(ofSize: 20)
-        blueLabel.textAlignment = .center
-        blueLabel.numberOfLines = 1
-        blueLabel.shadowColor = .blue
     }
     
     private func setupSliderRed() {
