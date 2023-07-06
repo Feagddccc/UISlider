@@ -21,7 +21,7 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        colorView.layer.cornerRadius = 15
+        colorView.layer.cornerRadius = 25
         setColor()
         fontSlider()
         setValue(for: redLabel, greenLabel, blueLabel)
